@@ -333,19 +333,19 @@
             >;
         }; 
         // gaming_media_layer: gaming and media controls
-        gaming_media_layer {
-            display-name="Gaming";
-                // -----------------------------------------------------------------------------------------
-                // |  ESC |     |     |     |     |     |   |         |     |         |     |   |      |
-                // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT     | PRV |  Play/P | NXT |   |      |
-                // | SHFT |     |     |     |     |     |   | MUTE    | VOL-| VOL+|   |     |   |      |
-                //                    | GUI |     | SPC |   | ENT     |     | ALT |
-            bindings = <
-                &kp ESC     &kp Q   &kp W   &kp E &kp R &kp T               &trans         &trans       &trans          &trans      &trans      &trans
-                &kp LCTRL   &bt A   &bt S   &bt D &bt F &bt G               &kp C_PREV     &kp C_PP     &kp C_NEXT      &kp LEFT    &trans      &trans
-                TD_SCLOCK   &kp Z   &kp X   &kp C &kp V &kp B               &kp C_MUTE     &kp C_VOL_DN &kp C_VOL_UP    &trans      &trans      &to 0
-                                    &kp LGUI     &trans       &kp SPACE             &kp RET         &trans          &kp RALT
-            >;
-        }; 
+        // gaming_media_layer {
+        //     display-name="Gaming";
+        //         // -----------------------------------------------------------------------------------------
+        //         // |  ESC |     |     |     |     |     |   |         |     |         |     |   |      |
+        //         // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT     | PRV |  Play/P | NXT |   |      |
+        //         // | SHFT |     |     |     |     |     |   | MUTE    | VOL-| VOL+|   |     |   |      |
+        //         //                    | GUI |     | SPC |   | ENT     |     | ALT |
+        //     bindings = <
+        //         &kp ESC     &kp Q   &kp W   &kp E &kp R &kp T               &trans         &trans       &trans          &trans      &trans      &trans
+        //         &kp LCTRL   &bt A   &bt S   &bt D &bt F &bt G               &kp C_PREV     &kp C_PP     &kp C_NEXT      &kp LEFT    &trans      &trans
+        //         TD_SCLOCK   &kp Z   &kp X   &kp C &kp V &kp B               &kp C_MUTE     &kp C_VOL_DN &kp C_VOL_UP    &trans      &trans      &to 0
+        //                             &kp LGUI     &trans       &kp SPACE             &kp RET         &trans          &kp RALT
+        //     >;
+        // }; 
     };
 };

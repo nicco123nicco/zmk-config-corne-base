@@ -333,12 +333,9 @@
                           	            &kp LGUI     &trans       &kp SPACE             &kp RET         &trans          &kp RALT
                         >;
                 }; 
-
- 
-        };
-        // gaming_media_layer: gaming and media controls
+// gaming_media_layer: gaming and media controls
         gaming_media_layer {
-            display-name="Gamaing";
+            display-name="Gaming";
         // -----------------------------------------------------------------------------------------
         // |  ESC |     |     |     |     |     |   |         |     |         |     |   |      |
         // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT     | PRV |  Play/P | NXT |   |      |
@@ -351,4 +348,7 @@
                                     &kp LGUI     &trans       &kp SPACE             &kp RET         &trans          &kp RALT
                 >;
         }; 
+ 
+        };
+        
 };

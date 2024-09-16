@@ -194,10 +194,10 @@ layers:
   - ⏮️
   - ⏯
   - ⏭️
-  - ←
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&td16'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
@@ -208,7 +208,7 @@ layers:
   - Vol Up
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
   - Gui
   - {t: ▽, type: trans}
   - ␣

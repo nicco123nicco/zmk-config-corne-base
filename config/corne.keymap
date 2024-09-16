@@ -274,7 +274,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                    display-name:"Dvorak";
+                    display-name="Dvorak";
 // -----------------------------------------------------------------------------------------
 // |TAB:ESC   | ; : | , < | . > |  P  |  Y  |         | F   |  G   |  C  |  R  |  L  | BKSP |
 // | CTRL     |  A  |  O  |  E  |  U  |  I  |         |  D  |  H   |  T  |  N  |  S  |  DEL |
@@ -288,7 +288,7 @@
                         >;
                 };
                 lower_layer {
-                    display-name:"lower";
+                    display-name="lower";
 // -----------------------------------------------------------------------------------------
 // |  ESC   |  7   |  5  |  3  |  1  |  9  |            |  0  |  2  |  4  |  6  |  8  |      |
 // | F11    |  F1  |  F2 |  F3 |  F4 |  F5 |            | LFT | DWN |  UP | RGT |     |      |
@@ -303,7 +303,7 @@
                 };
 
                 raise_layer {
-                    display-name:"raise";
+                    display-name="raise";
 // -----------------------------------------------------------------------------------------
 // |  ESC |  [  |  {  |  }  |  (  |  =  |       |  *  |  )  |  +  |  ]  |  !  | DEL  |
 // | CTRL |  ~  |  %  |  `  | / ? | @ ^ |       |     |     |     |     |     |      |
@@ -320,7 +320,7 @@
 
 // bt_media_layer: BT functions and media controls
                 bt_media_layer {
-                    display-name:"Bluetooth";
+                    display-name="Bluetooth";
 // -----------------------------------------------------------------------------------------
 // |  ESC |     |     |     |     |     |   |         |     |         |     |   |      |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT     | PRV |  Play/P | NXT |   |      |
@@ -338,7 +338,7 @@
         };
         // gaming_media_layer: gaming and media controls
         gaming_media_layer {
-            display-name:"Gamaing";
+            display-name="Gamaing";
         // -----------------------------------------------------------------------------------------
         // |  ESC |     |     |     |     |     |   |         |     |         |     |   |      |
         // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT     | PRV |  Play/P | NXT |   |      |

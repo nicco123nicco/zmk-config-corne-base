@@ -1,48 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
-  default:
-  - '&td0'
-  - '&td8'
-  - '&td9'
-  - '&td10'
-  - P
-  - Y
-  - F
-  - G
-  - C
-  - R
-  - L
-  - ⌫
-  - Ctrl
-  - A
-  - O
-  - E
-  - U
-  - I
-  - D
-  - H
-  - T
-  - N
-  - S
-  - ⌦
-  - '&td16'
-  - '&td4'
-  - '&td13'
-  - J
-  - K
-  - X
-  - B
-  - M
-  - W
-  - V
-  - Z
-  - {t: gaming_media, h: toggle}
-  - '&td12'
-  - lower
-  - '&td2'
-  - '&td2'
-  - raise
-  - Alt
+  default: ['&td0', '&td8', '&td9', '&td10', P, Y, F, G, C, R, L, ⌫, Ctrl, A, O, E, U, I, D, H, T, N, S, ⌦, '&td16', '&td4', '&td13', J, K, X, B, M, W, V, Z $doom
+      4 ESC, '&td12', lower, '&td2', '&td2', raise, Alt]
   lower:
   - {t: ▽, type: trans}
   - {t: '7', s: '['}
@@ -80,8 +39,8 @@ layers:
   - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -126,8 +85,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   bt_media:
   - EP TOG
@@ -166,52 +125,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui
-  - {type: held}
+  - {t: Gui, type: held}
+  - {t: ▽, type: trans}
   - ␣
-  - ⏎
-  - {type: held}
+  - {t: ⏎, type: held}
+  - {t: ▽, type: trans}
   - Alt
-  gaming_media:
-  - Esc
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - ⌫
-  - Ctrl
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - Shift
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: default, h: toggle}
-  - Gui
-  - lower
-  - ␣
-  - ⏎
-  - raise
-  - Alt
+  gaming_media: [Esc, Q, W, E, R, T, Y, U, I, O, P, ⌫, Ctrl, A, S, D, F, G, H, J, K, L, ;, '''', Shift, Z, X, C, V, B, N, M, ',', ., FSLH $doom 0 ESC, Gui, lower,
+    ␣, ⏎, raise, Alt]

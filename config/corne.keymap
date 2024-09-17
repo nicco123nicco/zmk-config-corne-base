@@ -270,7 +270,7 @@
             require-prior-idle-ms = <0>;     // Avoid false triggers during quick sequences
             flavor = "tap-preferred";        // "tap-preferred" means a quick tap sends the key first
             bindings = <&mo>, <&kp>;         // Hold switches layers, tap sends a key press
-        }
+        };
     };
 
     // LAYERS

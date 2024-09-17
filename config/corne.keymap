@@ -282,12 +282,12 @@
             bindings = <
                 TD_TAB     TD_SCLN  TD_COMM TD_DOT &kp P &kp Y                   &kp F &kp G  &kp C     &kp R   &kp L    &kp BSPC
                 &kp LCTRL  &kp A    &kp O   &kp E  &kp U &kp I                   &kp D &kp H  &kp T     &kp N   &kp S    &kp DEL
-                TD_SCLOCK TD_QUOTE TD_ARR  &kp J  &kp K &kp X                   &kp B &kp M  &kp W     &kp V   &kp Z    &to 4
-                                            TD_ALT  &mo 1 TD_SPC                   TD_SPC &mo 2 &kp RALT
+                TD_SCLOCK TD_QUOTE TD_ARR  &kp J  &kp K &kp X                   &kp B &kp M  &kp W     &kp V   &kp Z    &to GG
+                                            TD_ALT  &mo NAV TD_SPC                   TD_SPC &mo SYM &kp RALT
             >;
         };
         lower_layer {
-            display-name="lower";
+            display-name="Numers";
                 // -----------------------------------------------------------------------------------------
                 // |  ESC   |  7   |  5  |  3  |  1  |  9  |            |  0  |  2  |  4  |  6  |  8  |      |
                 // | F11    |  F1  |  F2 |  F3 |  F4 |  F5 |            | LFT | DWN |  UP | RGT |     |      |
@@ -302,7 +302,7 @@
         };
 
         raise_layer {
-            display-name="raise";
+            display-name="Symbols";
                 // -----------------------------------------------------------------------------------------
                 // |  ESC |  [  |  {  |  }  |  (  |  =  |       |  *  |  )  |  +  |  ]  |  !  | DEL  |
                 // | CTRL |  ~  |  %  |  `  | / ? | @ ^ |       |     |     |     |     |     |      |
@@ -319,7 +319,7 @@
 
 // bt_media_layer: BT functions and media controls
         bt_media_layer {
-            display-name="Bluetooth";
+            display-name="Settings";
                 // -----------------------------------------------------------------------------------------
                 // |  ESC |     |     |     |     |     |   |         |     |         |     |   |      |
                 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT     | PRV |  Play/P | NXT |   |      |
@@ -358,8 +358,8 @@
             bindings = <
                 &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
                 &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-                &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &tog 0
-                                &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+                &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &to DVRK
+                                &kp LGUI &mo NAV &kp SPACE   &kp RET &mo SYM &kp RALT
             >;
         };
     };

@@ -36,7 +36,7 @@ layers:
   - W
   - V
   - Z
-  - {t: gaming_media, h: toggle}
+  - {t: Esc, h: gaming_media}
   - '&td12'
   - lower
   - '&td2'
@@ -208,7 +208,7 @@ layers:
   - ','
   - .
   - /
-  - {t: default, h: toggle}
+  - {t: Esc, h: default}
   - Gui
   - lower
   - ␣

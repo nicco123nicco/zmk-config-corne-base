@@ -352,10 +352,10 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(812, 161)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Esc</text>
 <a href="#gaming_media">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 60%">gaming_me…</tspan></text>
-</a><text x="0" y="24" class="key hold">toggle</text>
-</g>
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 60%">gaming_me…</tspan></text>
+</a></g>
 <g transform="translate(224, 205)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">&amp;td12</text>
@@ -1078,10 +1078,10 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(812, 161)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Esc</text>
 <a href="#default">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 86%">default</tspan></text>
-</a><text x="0" y="24" class="key hold">toggle</text>
-</g>
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 86%">default</tspan></text>
+</a></g>
 <g transform="translate(224, 205)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Gui</text>

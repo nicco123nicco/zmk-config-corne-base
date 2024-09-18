@@ -40,7 +40,7 @@
 #define TD_ATCAT    &td14   // AT CARET 
 #define TD_TAW      &td15   // TAB LWIN
 #define TD_SCLOCK   &td16   // (S)LSHIFT CAPSLOCK (Sticky shift)
-#define RGB_TOG     &rgb_ug RGBTOG
+#define RGBTOG     &rgb_ug RGB_TOG
 #define RGBP        &rgb_ug RGB_COLOR_HSB(274,100,10);
 #define RGBEFF      &rgb_ug ERB_EFF
 #define RGBEFR      &rgb_ug ERB_EFR

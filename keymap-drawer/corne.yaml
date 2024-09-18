@@ -196,7 +196,8 @@ layers:
   - ⏯
   - ⏭️
   - {t: ▽, type: trans}
-  - '&trans RGBTOG'
+  - {t: ▽, type: trans}
+  - RGB TOG
   - RGB COLOR HSB(274,100,10);
   - ERB EFF
   - ERB EFR
@@ -209,8 +210,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui
-  - {t: ▽, type: trans}
-  - {t: ␣, type: held}
+  - {type: held}
+  - ␣
   - ⏎
-  - {t: ▽, type: trans}
-  - {t: Alt, type: held}
+  - {type: held}
+  - Alt

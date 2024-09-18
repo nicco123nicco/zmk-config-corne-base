@@ -43,6 +43,49 @@ layers:
   - '&td2'
   - raise
   - Alt
+  gaming_media:
+  - Esc
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ⌫
+  - Ctrl
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - Shift
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: Esc, h: default}
+  - Gui
+  - lower
+  - ␣
+  - ⏎
+  - raise
+  - Alt
   lower:
   - {t: ▽, type: trans}
   - {t: '7', s: '['}
@@ -155,11 +198,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RGB TOG
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RGB COLOR HSB(274,100,10);
+  - ERB EFF
+  - ERB EFR
+  - ERB SPI
+  - ERB SPD
   - MUTE
   - Vol Down
   - Vol Up
@@ -171,47 +214,4 @@ layers:
   - ␣
   - ⏎
   - {type: held}
-  - Alt
-  gaming_media:
-  - Esc
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - ⌫
-  - Ctrl
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - Shift
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: Esc, h: default}
-  - Gui
-  - lower
-  - ␣
-  - ⏎
-  - raise
   - Alt

@@ -41,13 +41,11 @@
 #define TD_TAW      &td15   // TAB LWIN
 #define TD_SCLOCK   &td16   // (S)LSHIFT CAPSLOCK (Sticky shift)
 #define RGBTOG     &rgb_ug RGB_TOG
-#define RGBP        &rgb_ug RGB_COLOR_HSB(274,100,10);
+#define RGBP        &rgb_ug RGB_COLOR_HSB(274,100,10)
 #define RGBEFF      &rgb_ug RGB_EFF
 #define RGBEFR      &rgb_ug RGB_EFR
 #define RGBSPI      &rgb_ug RGB_SPI
 #define RGBSPD      &rgb_ug RGB_SPD
-#define RGBSPD      &rgb_ug RGB_SPD
-
 
 // include &name in keymap to use
 // FORMAT

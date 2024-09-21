@@ -48,7 +48,7 @@
 #define RGBSPD      &rgb_ug RGB_SPD
 
 // include &name in keymap to use
-// FORMAT
+// FORMAT                               
 //   natural --> (on shift)
 //   number --> symbols | number code --> symbol code 
 // one_lpar    1 --> (  | N1 --> LPAR
@@ -70,7 +70,9 @@
 };
 
 */
-
+&led_strip {
+    chain-length = <21>;
+};
 / {
 
 
@@ -364,8 +366,8 @@
                 &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
                 &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &doom DVRK ESC
-                                &kp LGUI &mo NAV &kp SPACE   &kp RET &mo SYM &kp RALT
+                                &kp LGUI TD_ALT &kp SPACE   &kp RET &lt SYM &kp RALT
             >;
         };
     };
-};
+};s;lkll;'lkj;ljhhnm,.opiypoyopiupoiuppoiuopiuwpoeis;kdv;sdhvfhyhythgnbhgtngnbjfhtyglwjueh.fasndfkj'

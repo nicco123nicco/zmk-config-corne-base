@@ -11,10 +11,10 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define DVRK 0
-#define GG 1
-#define NAV 2
-#define SYM 3
-#define BT 4
+#define NAV 1
+#define SYM 2
+#define BT 3
+#define GG 4
 
 // TAP_DANCE settings
 #define TAP_SPEED 200
@@ -283,8 +283,8 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <2 3>;
-            then-layer = <4>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
     keymap {

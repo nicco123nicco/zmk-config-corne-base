@@ -191,10 +191,10 @@ layers:
   - BT 3
   - BT 4
   - BT 5
-  - ←
   - ⏮️
   - ⏯
   - ⏭️
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RGB TOG
@@ -203,8 +203,8 @@ layers:
   - ERB EFR
   - ERB SPI
   - ERB SPD
-  - MUTE
   - Vol Down
+  - MUTE
   - Vol Up
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

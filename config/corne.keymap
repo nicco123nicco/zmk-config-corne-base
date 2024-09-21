@@ -267,7 +267,7 @@
             compatible = "zmk,behavior-mod-morph";
             label="EIGHT_EXLM";
             #binding-cells = <0>; 
-            bindings = <&kp N8>,    <&kp EXCL>;
+            bindings = <&kp N8>,<&kp EXCL>;
             mods=<(MOD_LSFT|MOD_RSFT)>;
         };
         doom: doom{

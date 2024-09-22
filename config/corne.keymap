@@ -12,7 +12,7 @@
 
 #define DVRK 0
 #define GG 1
-#define NAV 2
+#define NUM 2
 #define SYM 3
 #define BT 4
 
@@ -40,7 +40,7 @@
 #define TD_ATCAT    &td14   // AT CARET 
 #define TD_TAW      &td15   // TAB LWIN
 #define TD_SCLOCK   &td16   // (S)LSHIFT CAPSLOCK (Sticky shift)
-#define RGBTOG     &rgb_ug RGB_TOG
+#define RGBTOG      &rgb_ug RGB_TOG
 #define RGBP        &rgb_ug RGB_COLOR_HSB(274,100,10)
 #define RGBEFF      &rgb_ug RGB_EFF
 #define RGBEFR      &rgb_ug RGB_EFR
@@ -296,12 +296,12 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <NUM SYM>;
+            then-layer = <BT>;
         };
     };
     keymap {
-    compatible = "zmk,keymap";
+        compatible = "zmk,keymap";
         default_layer {
             display-name="Dvorak";
                 // -----------------------------------------------------------------------------------------
@@ -313,7 +313,7 @@
                 TD_TAB     TD_SCLN  TD_COMM TD_DOT &kp P &kp Y                   &kp F &kp G  &kp C     &kp R   &kp L    &kp BSPC
                 &kp LCTRL  &kp A    &kp O   &kp E  &kp U &kp I                   &kp D &kp H  &kp T     &kp N   &kp S    &kp DEL
                 TD_SCLOCK TD_QUOTE TD_ARR  &kp J  &kp K &kp X                   &kp B &kp M  &kp W     &kp V   &kp Z     &doom GG ESC
-                                            TD_ALT  &mo NAV TD_SPC                   TD_SPC &mo SYM &kp RALT
+                                            TD_ALT  &mo NUM TD_SPC                   TD_SPC &mo SYM &kp RALT
             >;
         };
         // gaming_media_layer: gaming and media controls

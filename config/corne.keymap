@@ -73,10 +73,6 @@
 &led_strip {
     chain-length = <27>;
 };
-&ext_power {
-    compatible = "zmk,ext-power";
-    label = "EXT_POWER";
-};
 / {
 
 
@@ -269,20 +265,9 @@
                 , <&macro_release &kp LALT>
                 , <&macro_release &kp LCTRL>                
                 ;
+            };
         };
     };
-    };
-    // macros {
-    //     zed_em_kay: zed_em_kay {
-    //         compatible = "zmk,behavior-macro";
-    //         #binding-cells = <0>;
-    //         bindings
-    //             = <&macro_press &tog LSHFT>
-    //             , <&macro_tap &kp Z &kp M &kp K>
-    //             , <&macro_release &kp LSHFT>
-    //             ;
-    //     };
-    // };
     // LAYERS
     conditional_layers {
         compatible = "zmk,conditional-layers";

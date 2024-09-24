@@ -253,20 +253,21 @@
             flavor = "tap-preferred";        // "tap-preferred" means a quick tap sends the key first
             bindings = <&to>, <&kp>;         // Hold switches layers, tap sends a key press
         };
-      macros {
-        audio: audio {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_press &kp LCTRL>
-                , <&macro_press &kp LSHIFT>
-                , <&macro_tap  &kp F11>
-                , <&macro_release &kp LSHIFT>
-                , <&macro_release &kp LALT>
-                , <&macro_release &kp LCTRL>                
-                ;
+        macros {
+            audio: audio {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LALT>
+                    , <&macro_press &kp LCTRL>
+                    , <&macro_press &kp LSHIFT>
+                    , <&macro_tap  &kp F11>
+                    , <&macro_release &kp LSHIFT>
+                    , <&macro_release &kp LALT>
+                    , <&macro_release &kp LCTRL>                
+                    ;
             };
+            
         };
     };
     // LAYERS
@@ -306,7 +307,7 @@
                 TD_TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
                 &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
                 TD_SCLOCK &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &doom DVRK ESC
-                                &kp LGUI &kp LALT &kp SPACE   &kp RET &mo SET &kp RALT
+                                TD_ALT &mo NUM &kp SPACE   &kp RET &mo SET &kp RALT
             >;
         };
 

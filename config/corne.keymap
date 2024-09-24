@@ -189,70 +189,60 @@
         // create the shifts of dvorak 
         seven_lbkt: seven_lbkt{ 
             compatible = "zmk,behavior-mod-morph";
-            label="SEVEN_LBKT";
             #binding-cells = <0>;
             bindings = <&kp N7>, <&kp LBKT>;  
             mods=<(MOD_LSFT|MOD_RSFT)>;
             }; 
         five_lbrc: five_lbrc {
             compatible = "zmk,behavior-mod-morph";
-            label="FIVE_LBRC";
             #binding-cells = <0>; 
             bindings = <&kp N5>,<&kp LBRC>;
             mods=<(MOD_LSFT|MOD_RSFT)>;
         };
         three_rbrc: three_rbrc {
             compatible = "zmk,behavior-mod-morph";
-            label="THREE_RBRC";
             #binding-cells = <0>; 
             bindings = <&kp N3>,<&kp RBRC>;
             mods=<(MOD_LSFT|MOD_RSFT)>;
         };
         one_lpar: one_lpar {
             compatible = "zmk,behavior-mod-morph";
-            label="ONE_LPAR";
             #binding-cells = <0>; 
             bindings = <&kp N1>,<&kp LPAR>;
             mods=<(MOD_LSFT|MOD_RSFT)>;
         };
         nine_equal: nine_equal {
             compatible = "zmk,behavior-mod-morph";
-            label="nine_equal";
             #binding-cells = <0>; 
             bindings = <&kp N9>,    <&kp EQUAL>;
             mods=<(MOD_LSFT|MOD_RSFT)>;
         };
         zero_s: zero_star { 
             compatible = "zmk,behavior-mod-morph";
-            label="ZERO_STAR";
             #binding-cells = <0>;
             bindings = <&kp N0>, <&kp STAR>;  
             mods=<(MOD_LSFT|MOD_RSFT)>;
             }; 
         two_par: two_paren {
             compatible = "zmk,behavior-mod-morph";
-            label="TWO_PAR";
             #binding-cells = <0>; 
             bindings = <&kp N2>,<&kp RPAR>;
             mods=<(MOD_LSFT|MOD_RSFT)>;
         };
         four_pl: four_plus {
             compatible = "zmk,behavior-mod-morph";
-            label="FOUR_PLUS";
             #binding-cells = <0>; 
             bindings = <&kp N4>,<&kp PLUS>;
             mods=<(MOD_LSFT|MOD_RSFT)>;
         };
         six_rbkt: six_rbkt {
             compatible = "zmk,behavior-mod-morph";
-            label="six_rbkt";
             #binding-cells = <0>; 
             bindings = <&kp N6>,<&kp RBKT>;
             mods=<(MOD_LSFT|MOD_RSFT)>;
         };
         eight_exlm: eight_exlm {
             compatible = "zmk,behavior-mod-morph";
-            label="EIGHT_EXLM";
             #binding-cells = <0>; 
             bindings = <&kp N8>,<&kp EXCL>;
             mods=<(MOD_LSFT|MOD_RSFT)>;

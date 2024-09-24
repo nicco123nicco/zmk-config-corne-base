@@ -73,6 +73,10 @@
 &led_strip {
     chain-length = <27>;
 };
+&ext_power {
+    compatible = "zmk,ext-power";
+    label = "EXT_POWER";
+};
 / {
 
 

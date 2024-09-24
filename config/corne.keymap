@@ -14,7 +14,7 @@
 #define GG 1
 #define NUM 2
 #define SYM 3
-#define BT 4
+#define SET 4
 
 // TAP_DANCE settings
 #define TAP_SPEED 200
@@ -35,7 +35,7 @@
 #define TD_COMM     &td9    // COMMA LESS_THAN 
 #define TD_DOT      &td10   // PERIOD GREATER_THAN 
 #define TD_BACKF    &td11   // GRAVE TILDE
-#define TD_ALT      &td12   // LALT GUI
+#define TD_ALT      &td12   // LALT LGUI
 #define TD_ARR      &td13   // Q AT (@)
 #define TD_ATCAT    &td14   // AT CARET 
 #define TD_TAW      &td15   // TAB LWIN
@@ -46,7 +46,7 @@
 #define RGBEFR      &rgb_ug RGB_EFR
 #define RGBSPI      &rgb_ug RGB_SPI
 #define RGBSPD      &rgb_ug RGB_SPD
-
+#define AUDIO       &audio
 // include &name in keymap to use
 // FORMAT                               
 //   natural --> (on shift)
@@ -168,7 +168,7 @@
             label = "TAP_DANCE_12"; 
             #binding-cells = <0>; 
             tapping-term-ms = <TAP_SPEED>; 
-            bindings = <&kp LALT>, <&kp GUI>;
+            bindings = <&kp LALT>, <&kp LGUI>;
             };
         td13: tap_dance_13 {
             compatible = "zmk,behavior-tap-dance";
@@ -279,7 +279,22 @@
             flavor = "tap-preferred";        // "tap-preferred" means a quick tap sends the key first
             bindings = <&to>, <&kp>;         // Hold switches layers, tap sends a key press
         };
-      
+      macros {
+        audio: audio {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_press &kp LSHIFT>
+                , <&macro_tap  &kp F1>
+                , <&macro_release kp LCTRL>
+                , <&macro_release kp LALT>
+                , <&macro_release kp LSHIFT>
+                
+                ;
+        };
+    };
     };
     // macros {
     //     zed_em_kay: zed_em_kay {
@@ -297,7 +312,7 @@
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <NUM SYM>;
-            then-layer = <BT>;
+            then-layer = <SET>;
         };
     };
     keymap {
@@ -308,7 +323,7 @@
                 // |TAB:ESC   | ; : | , < | . > |  P  |  Y  |         | F   |  G   |  C  |  R  |  L  | BKSP |
                 // | CTRL     |  A  |  O  |  E  |  U  |  I  |         |  D  |  H   |  T  |  N  |  S  |  DEL |
                 // | LSFT:CAP |' "  | q @ | J   | K   |  X  |         |  B  |  M   |  W  |  V  |  Z  | TAB  |
-                //                        | GUI | LWR | SPC |         | ENT | RSE  | ALT |
+                //                        | LGUI | LWR | SPC |         | ENT | RSE  | ALT |
             bindings = <
                 TD_TAB     TD_SCLN  TD_COMM TD_DOT &kp P &kp Y                   &kp F &kp G  &kp C     &kp R   &kp L    &kp BSPC
                 &kp LCTRL  &kp A    &kp O   &kp E  &kp U &kp I                   &kp D &kp H  &kp T     &kp N   &kp S    &kp DEL
@@ -323,13 +338,13 @@
                 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
                 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
                 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-                //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                //                    | LGUI | LWR | SPC |   | ENT | RSE  | ALT |
             display-name="Gaming";
             bindings = <
-                &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+                TD_TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
                 &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-                &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &doom DVRK ESC
-                                &kp LGUI &kp LALT &kp SPACE   &kp RET &mo SYM &kp RALT
+                TD_SCLOCK &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &doom DVRK ESC
+                                &kp LGUI &kp LALT &kp SPACE   &kp RET &mo SET &kp RALT
             >;
         };
 
@@ -354,7 +369,7 @@
                 // |  ESC |  [  |  {  |  }  |  (  |  =  |       |  *  |  )  |  +  |  ]  |  !  | DEL  |
                 // | CTRL |  ~  |  %  |  `  | / ? | @ ^ |       |     |     |     |     |     |      |
                 // | SHFT |  $  |  &  |  #  | - _ | \ | |       |     |     |     |     |     |      |
-                //                    | GUI |     | SPC |       | ENT |     | ALT |
+                //                    | LGUI |     | SPC |       | ENT |     | ALT |
             bindings = <
                 &trans     &kp LBKT    &kp LBRC     &kp RBRC     &kp LPAR    &kp EQUAL       &kp STAR    &kp RPAR  &kp PLUS  &kp RBKT  &kp EXCL   &trans    
                 &kp LCTRL  &kp TILDE   &kp PRCNT    &kp GRAVE    TD_SLSH     TD_ATCAT        &trans      &trans    &trans    &trans    &trans     &trans
@@ -364,18 +379,18 @@
         };
 
 
-        // bt_media_layer: BT functions and media controls
+        // bt_media_layer: SET functions and media controls
         bt_media_layer {
             display-name="Settings";
                 // -----------------------------------------------------------------------------------------
-                // |  ESC |     |     |     |     |     |   |         |     |         |     |   |      |
+                // |  TOG POW |     |     |     |     |     |   |         |     |         |     |   |      |
                 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT     | PRV |  Play/P | NXT |   |      |
-                // | SHFT |     |     |     |     |     |   | MUTE    | VOL-| VOL+|   |     |   |      |
-                //                    | GUI |     | SPC |   | ENT     |     | ALT |
+                // | TOG RGB |  PP |  EF |  ER |  SPi |  SPd |   | VOL- |MUTE| VOL+|    |     |   |      |
+                //                    | LGUI |     | SPC |   | ENT     |     | ALT |
             bindings = <
                 &ext_power EP_TOG   &trans          &trans          &trans          &trans       &trans                 &trans          &trans          &trans          &trans  &trans  &trans
                 &bt BT_CLR          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3 &bt BT_SEL 4           &kp C_PREV      &kp C_PP        &kp C_NEXT      &trans  &trans  &trans
-                RGBTOG              RGBP            RGBEFF          RGBEFR          RGBSPI       RGBSPD                 &kp C_VOL_DN    &kp C_MUTE      &kp C_VOL_UP    &trans  &trans  &trans
+                RGBTOG              RGBP            RGBEFF          RGBEFR          RGBSPI       RGBSPD                 &kp C_VOL_DN    &kp C_MUTE      &kp C_VOL_UP    &trans  &trans  AUDIO
                                                         &kp LGUI     &trans       &kp SPACE             &kp RET         &trans          &kp RALT
             >;
         }; 

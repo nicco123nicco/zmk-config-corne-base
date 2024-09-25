@@ -47,6 +47,7 @@
 #define RGBSPI      &rgb_ug RGB_SPI
 #define RGBSPD      &rgb_ug RGB_SPD
 #define RGBBRD      &rgb_ug RGB_BRD
+#define RGBBRI      &rgb_ug RGB_BRI
 #define AUDIO       &audio
 // include &name in keymap to use
 // FORMAT                               
@@ -352,7 +353,7 @@
             bindings = <
                 &trans          &trans          &trans          &trans          &trans       &trans                 &trans          &trans          &trans          &trans      &ext_power EP_ON    &ext_power EP_OFF 
                 &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3 &bt BT_SEL 4           &kp C_PREV      &kp C_PP        &kp C_NEXT      &trans      &rgb_ug RGB_ON      &rgb_ug RGB_OFF
-                RGBBRD          RGBP            RGBEFF          RGBEFR          RGBSPI       RGBSPD                 &kp C_VOL_DN    &kp C_MUTE      &kp C_VOL_UP    &trans      &trans              AUDIO
+                RGBBRD          RGBBRI            RGBEFF          RGBEFR          RGBSPI       RGBSPD                 &kp C_VOL_DN    &kp C_MUTE      &kp C_VOL_UP    &trans      &trans              AUDIO
                                                                 &kp LGUI        &trans       &kp SPACE              &kp RET         &trans          &kp RALT
             >;
         }; 

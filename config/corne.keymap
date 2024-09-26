@@ -40,6 +40,7 @@
 #define TD_ATCAT    &td14   // AT CARET 
 #define TD_TAW      &td15   // TAB LWIN
 #define TD_SCLOCK   &td16   // (S)LSHIFT CAPSLOCK (Sticky shift)
+#define TD_FASTTAB      &fast_tab_gui
 #define RGBTOG      &rgb_ug RGB_TOG
 #define RGBP        &rgb_ug RGB_COLOR_HSB(274,100,10)
 #define RGBEFF      &rgb_ug RGB_EFF
@@ -157,6 +158,12 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>; 
             tapping-term-ms = <TAP_SPEED>; 
+            bindings = <&kp LALT>, <&kp LGUI>;
+            };
+        fast_tab_gui: tab_gui {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>; 
+            tapping-term-ms = <80>; 
             bindings = <&kp LALT>, <&kp LGUI>;
             };
         td13: tap_dance_13 {
@@ -307,7 +314,7 @@
                 TD_TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
                 &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
                 TD_SCLOCK &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &doom DVRK ESC
-                                TD_ALT &mo NUM &kp SPACE   &kp RET &mo SYM &kp RALT
+                                TD_FASTTAB &mo NUM &kp SPACE   &kp RET &mo SYM &kp RALT
             >;
         };
 
